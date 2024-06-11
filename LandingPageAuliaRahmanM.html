@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/logo sttnf.png">
+    <title>Lapangan STTNF</title>
+    <style>
+        html, body{
+            scroll-behavior: smooth;
+            background-color:#005BAA; 
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            margin: 0;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            background-color: #EB701D;
+            margin: 0;
+            top: 0;
+            position: fixed;
+            width: 100%;;
+            padding: 0;
+        }
+        
+        nav ul li a{
+            display: block;
+            padding: 9px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover{
+            background-color:black;
+            transition-duration: 1s;
+        }
+
+        nav ul li img{
+            width: 25px;
+            height: 23px;
+            margin: -6px 2px;
+        }
+        
+        .head{
+            justify-content: center;
+        }
+
+        .f1{
+            background-color:white; 
+            color: #005BAA; 
+            border-radius: 10px;
+            margin: 25px 26%;
+            border: 3px solid black;
+        }
+
+        .f2{
+            background-color:white; 
+            color: #005BAA; 
+            border-radius: 10px;
+            border: 3px solid black;
+            text-align: center;
+        }
+
+        .f3{
+            width: 20%;
+            margin: 0 auto;
+        }
+        
+        header{
+            text-align: center;
+        }
+        
+        header h1{
+            margin-top: 0px;
+        }
+
+        header div{
+            justify-content: center; 
+            margin: -20px;
+        }
+        
+        header img{
+            margin: -5px;
+            width: 25px; 
+            height: 20px;
+        }
+        
+        .futsal img{
+            width: 100%;
+        }
+
+        .badminton img{
+            width: 100%;
+        }
+
+        .table3{
+            justify-content: center; 
+            display: flex;
+            text-align: left;
+        }
+
+        .table1, .table2 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .tab1, .tab2{
+            width: 95%;
+        }
+        
+        .th{
+            background-color: #EB701D;
+            color: black;
+        }
+
+        .table1 tr:nth-child(odd), .table2 tr:nth-child(odd){
+            background-color: white;
+            color: #005BAA;
+        }
+
+        .table1 tr:nth-child(even), .table2 tr:nth-child(even){
+            background-color: #005BAA;
+            color: white;
+        }
+
+        .pilihlapangan{
+            display: flex;
+        }
+        button{
+            margin-top: 5px;
+            width: 30%;
+        }
+
+        footer{
+            background-color:white; 
+            color: #005BAA; 
+            border-radius: 10px;
+            border: 3px solid black;
+        }
+
+        footer h3{
+            text-align: center;
+            margin: 0;
+        }
+
+        .sosmed{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .sosmed p{
+            margin: 0;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        footer ul li {
+            list-style: none;
+        }
+
+        @media screen and (max-width:600px) {
+            .sosmed {
+                flex-direction: column;
+            }
+            footer ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <nav id="home">
+        <ul>
+            <li><a href="#home"><img src="Assets/home.png">Home</a></li>
+            <li><a href="#futsal"><img src="Assets/futsal.png">Lapangan Futal</a></li>
+            <li><a href="#badminton"><img src="Assets/shuttlecock.png">Lapangan Bulutangkis</a></li>
+            <li><a href="#Pemesanan"><img src="Assets/bill.png">Pemesanan</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <div class="head">
+        <fieldset class="f1">
+            <header>
+                <h1>SEWA LAPANGAN OLAHRAGA</h1>
+                <div>
+                    <p>powered by STTNF <img src="Assets/logo sttnf.png"></p>
+                </div>
+            </header>
+        </fieldset>
+    </div>
+
+    <br>
+
+    <article>
+        <fieldset class="f2">
+            <h2>Halo folks, Selamat Datang di website Lapangan STTNF</h2>
+            <p>Pada halaman ini tersedia informasi-informasi tentang penyewaan lapangan olahraga, diantaranya ada lapangan futsal dan lapangan bulu tangkis. Lapangan ini baru dibangun atas dasar kepedulian kebugaran warga STTNF untuk melawan pandemi covid-19 dan diresmikan pada akhir tahun 2020. Hingga saat ini telah banyak peminat yang berdatangan untuk berolahraga disini.</p>
+            <p>Kami buka setiap hari kecuali hari jumat karena untuk pemeliharaan lapangan dan beroperasi di jam 08.00 s.d. 20.00 WIB. Disini tersedia masing-masing 2 lapangan futsal 2 lapangan badminton</p>
+
+            <br id="futsal">
+            <div class="futsal">
+                <h2>Lapangan Futsal</h2>
+                <p><img src="Assets/Lapangan Futsal.jpg" alt="foto lapangan futsal" loading="lazy"></p>
+                <iframe width="95%" height="400" src="https://www.youtube.com/embed/8xBOIM--uBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Berikut daftar harga untuk lapangan futsal:</p>
+                
+                <div class="table1">
+                    <table class="tab1">
+                        <tr>
+                            <th class="th">Hari / Jam</th>
+                            <th class="th">Harga 1 jam</th>
+                            <th class="th">Paket 4 jam</th>
+                        </tr>
+                        <tr>
+                            <th>Senin s.d. Kamis</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08.00 - 16.00</td>
+                            <td>Rp. 115.000</td>
+                            <td>Rp. 400.000</td>
+                        </tr>
+                        <tr>
+                            <td>16.00 - 20.00</td>
+                            <td>Rp. 165.000</td>
+                            <td>Rp. 550.000</td>
+                        </tr>
+                        <tr>
+                            <th>Sabtu & Minggu</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08.00 - 16.00</td>
+                            <td>Rp. 165.000</td>
+                            <td>Rp. 550.000</td>
+                        </tr>
+                        <tr>
+                            <td>16.00 - 20.00</td>
+                            <td>Rp. 195.000</td>
+                            <td>Rp. 650.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <br id="badminton">
+            <div class="badminton">
+                <h2>Lapangan badminton</h2>
+                <p><img src="Assets/Lapangan Bulutangkis.jpg" alt="foto lapangan badminton" loading="lazy"></p>
+                <iframe width="95%" height="400" src="https://www.youtube.com/embed/QOLvzjJHiwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Berikut daftar harga untuk lapangan badminton:</p>
+                
+                <div class="table2">
+                    <table class="tab2">
+                        <tr>
+                            <th class="th">Hari / Jam</th>
+                            <th class="th">Harga 1 jam</th>
+                            <th class="th">Paket 12 jam</th>
+                        </tr>
+                        <tr>
+                            <th>Senin s.d. Kamis</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08.00 - 16.00</td>
+                            <td>Rp. 40.000</td>
+                            <td>Rp. 380.000</td>
+                        </tr>
+                        <tr>
+                            <td>16.00 - 20.00</td>
+                            <td>Rp. 45.000</td>
+                            <td>Rp. 440.000</td>
+                        </tr>
+                        <tr>
+                            <th>Sabtu & Minggu</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08.00 - 16.00</td>
+                            <td>Rp. 50.000</td>
+                            <td>Rp. 500.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <br id="Pemesanan">
+            <div class="Pemesanan">
+                <h2>Pemesanan</h2>
+                <form action="">
+                    <fieldset class="f3">
+                        <legend><b>Form Pemesanan Lapangan</b></legend>
+                        <div class="table3">
+                            <table class="tab3">
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Hari, Tanggal</td>
+                                    <td>:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Lapangan</td>
+                                    <td>:</td>
+                                    <td class="pilihlapangan">
+                                        <input type="radio" name="lapangan" id="lap1">
+                                        <label for="lap1">Futsal</label>
+                                        <input type="radio" name="lapangan" id="lap2">
+                                        <label for="lap2">Badminton</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jam</td>
+                                    <td>:</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button>Kirim</button>
+                    </fieldset>
+                </form>
+            </div>
+        </fieldset>
+    </article>
+
+    <br>
+    <footer>
+        <h3>Our Social Media:</h3>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/sttterpadunf/">sttterpadunf</a></li>
+            <li>Website: <a href="https://nurulfikri.ac.id/">nurulfikri.ac.id</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/user/STTNF">STTTerpaduNF</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
